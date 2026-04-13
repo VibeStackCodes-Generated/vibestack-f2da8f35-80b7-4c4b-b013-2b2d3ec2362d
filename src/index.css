@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(220 20% 6%);
+  --color-foreground: hsl(210 20% 92%);
+  --color-card: hsl(220 18% 10%);
+  --color-card-foreground: hsl(210 20% 92%);
+  --color-popover: hsl(220 18% 10%);
+  --color-popover-foreground: hsl(210 20% 92%);
+  --color-primary: hsl(35 95% 55%);
+  --color-primary-foreground: hsl(220 20% 6%);
+  --color-secondary: hsl(220 15% 16%);
+  --color-secondary-foreground: hsl(210 20% 80%);
+  --color-muted: hsl(220 15% 14%);
+  --color-muted-foreground: hsl(210 10% 55%);
+  --color-accent: hsl(220 15% 18%);
+  --color-accent-foreground: hsl(210 20% 92%);
+  --color-destructive: hsl(0 72% 51%);
+  --color-destructive-foreground: hsl(210 20% 98%);
+  --color-border: hsl(220 15% 18%);
+  --color-input: hsl(220 15% 18%);
+  --color-ring: hsl(35 95% 55%);
+  --color-chart-1: hsl(35 95% 55%);
+  --color-chart-2: hsl(200 70% 50%);
+  --color-chart-3: hsl(150 60% 45%);
+  --color-chart-4: hsl(280 65% 55%);
+  --color-chart-5: hsl(340 70% 55%);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --color-sidebar-ring: hsl(35 95% 55%);
+  --color-sidebar-border: hsl(220 15% 18%);
+  --color-sidebar-accent-foreground: hsl(210 20% 92%);
+  --color-sidebar-accent: hsl(220 15% 18%);
+  --color-sidebar-primary-foreground: hsl(220 20% 6%);
+  --color-sidebar-primary: hsl(35 95% 55%);
+  --color-sidebar-foreground: hsl(210 20% 80%);
+  --color-sidebar: hsl(220 18% 10%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', monospace;
+  }
+}
